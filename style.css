@@ -1,3 +1,6 @@
+/*Styles for Tea Cozy*/
+
+/* Body */
 body {
   font-family: Helvetica;
   font-size: 22px;
@@ -7,23 +10,35 @@ body {
   margin: 0px;
 }
 
+/* Main Div */
 .main-content {
   display: flex;
   flex-direction: column;
-
+  position: relative;
+  top: 70px;
 }
 
+/* Header */
 header {
   display: flex;
+  align-items: center;
   position: fixed;
   z-index: 2;
   background-color: inherit;
   height: 69px;
   width: 100%;
   border-bottom: 1px solid seashell;
-
 }
 
+.logo {
+  margin-left: 10px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+/* Our Mission */
 .our-mission {
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
 }
