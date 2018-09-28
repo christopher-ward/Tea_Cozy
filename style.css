@@ -54,11 +54,17 @@ a {
 
 /* Our Mission */
 .our-mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
   width: 1200px;
   height: 700px;
 }
 
+.header-text {
+  text-align: center;
+}
 
 .locations {
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
