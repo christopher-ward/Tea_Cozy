@@ -38,9 +38,25 @@ header {
   height: 50px;
 }
 
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  width: 600px;
+  flex-grow: 1;
+}
+
+a {
+  text-decoration: underline;
+  color: seashell;
+  padding: 20px 10px;
+}
+
+
 /* Our Mission */
 .our-mission {
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
+  width: 1200px;
+  height: 700px;
 }
 
 
