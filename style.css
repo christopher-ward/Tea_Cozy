@@ -4,6 +4,24 @@ body {
   color: seashell;
   background-color: black;
   opacity: 0.9;
+  margin: 0px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+
+}
+
+header {
+  display: flex;
+  position: fixed;
+  z-index: 2;
+  background-color: inherit;
+  height: 69px;
+  width: 100%;
+  border-bottom: 1px solid seashell;
+
 }
 
 .our-mission {
