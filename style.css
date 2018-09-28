@@ -14,6 +14,7 @@ body {
 .main-content {
   display: flex;
   flex-direction: column;
+
   position: relative;
   top: 70px;
 }
@@ -62,10 +63,53 @@ a {
   height: 700px;
 }
 
+/* Header text formatting */
 .header-text {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  background-color: black;
+  width: 100%
 }
 
+/* Store Div */
+.store {
+  width: 1000px;
+}
+
+/* Store Items */
+.store-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  height: 600px;
+  width: 1000px;
+}
+
+.store-items img {
+  height: 200px;
+  width: 300px;
+}
+
+/* Locations */
 .locations {
+  text-align: center;
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
+  height: 500px;
+  width: 1200px;
+}
+
+.addresses {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.location {
+  background-color: black;
+  width: 300px;
 }
