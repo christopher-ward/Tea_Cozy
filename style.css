@@ -53,7 +53,7 @@ a {
 }
 
 /* Header text formatting */
-.header-text {
+.headers {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -61,12 +61,9 @@ a {
   width: 100%
 }
 
-.headers{
-  margin: 10px auto;
-}
-
-h2, h4{
+h2, h3, h4{
   margin: 0px;
+  padding: 10px;
 }
 
 /* Our Mission */
@@ -91,7 +88,6 @@ h2, h4{
   justify-content: center;
   text-align: center;
   flex-wrap: wrap;
-  height: 600px;
   width: 1000px;
 }
 
