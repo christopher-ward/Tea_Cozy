@@ -8,6 +8,7 @@ body {
   background-color: black;
   opacity: 0.9;
   margin: 0px;
+  text-align: center;
 }
 
 /* Header */
@@ -79,6 +80,7 @@ h2, h3, h4{
 /* Store Div */
 .store {
   width: 1000px;
+  margin: 75px 0px;
 }
 
 /* Store Items */
@@ -88,30 +90,71 @@ h2, h3, h4{
   justify-content: center;
   text-align: center;
   flex-wrap: wrap;
-  width: 1000px;
 }
 
 .store-items img {
   height: 200px;
   width: 300px;
+  padding: 10px 15px;;
+}
+
+.store-items h4 {
+  padding: 5px;
 }
 
 /* Locations */
 .locations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
   height: 500px;
   width: 1200px;
 }
 
+.locations h2 {
+  margin-top: 50px;
+}
+
 .addresses {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  width: 1000px;
 }
 
 .location {
+  display: flex;
+  flex-direction: column;
   background-color: black;
   width: 300px;
+  margin: 5px auto;
+}
+
+/* About */
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  margin: 0 auto;
+
+}
+
+.about h2 {
+  padding-bottom: 25px;
+  margin: 0px;
+}
+
+.about h5 {
+  padding: 20px;
+  margin: 0px;
+}
+
+/* Footer */
+.main-content footer {
+  width: 100%;
+  text-align: left;
+  margin-left: 20px;
 }
