@@ -13,35 +13,81 @@ body {
 
 /* Header */
 header {
-  display: flex;
-  align-items: center;
   position: fixed;
   z-index: 2;
   background-color: inherit;
-  height: 69px;
+  height: auto;
   width: 100%;
   border-bottom: 1px solid seashell;
 }
 
-.logo {
-  margin-left: 10px;
+header li {
+  display: inline;
+  padding: 10px;
 }
 
-.logo img {
+header img {
+  margin: 10px;
   height: 50px;
+  float: left;
 }
 
-.navigation {
-  display: flex;
-  justify-content: flex-end;
-  width: 600px;
-  flex-grow: 1;
+header nav {
+  float: right;
+}
+
+.mobile {
+  display: none;
+}
+
+.mobile-list {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-list li {
+  display: block;
 }
 
 a {
   text-decoration: underline;
   color: seashell;
   padding: 20px 10px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: white;
+  position: absolute;
+  display: block;
+  content: '';
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+/* Hamburger Element Animation */
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  transition: all 500ms ease-in-out;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
 }
 
 /* Main Div */
@@ -157,4 +203,30 @@ h2, h3, h4{
   width: 100%;
   text-align: left;
   margin-left: 20px;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 1024px) {
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header img {
+    width: 30%;
+    height: auto;
+  }
+
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .desktop {
+    display: none;
+  }
 }
