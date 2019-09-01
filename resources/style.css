@@ -36,6 +36,13 @@ header nav {
   float: right;
 }
 
+a {
+  text-decoration: underline;
+  color: seashell;
+  padding: 20px 10px;
+}
+
+/*-- Mobile Header Stylings --*/
 .mobile {
   display: none;
 }
@@ -50,12 +57,7 @@ header nav {
   display: block;
 }
 
-a {
-  text-decoration: underline;
-  color: seashell;
-  padding: 20px 10px;
-}
-
+/* Mobile Nav Toggle */
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
   cursor: pointer;
   border-radius: 1px;
@@ -90,8 +92,8 @@ a {
   transform: rotate(-45deg);
 }
 
-/* Main Div */
-.main-content {
+/*-- Main Div --*/
+#main-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,7 +116,7 @@ h2, h3, h4{
 }
 
 /* Our Mission */
-.our-mission {
+#mission {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,14 +125,14 @@ h2, h3, h4{
   height: 700px;
 }
 
-/* Store Div */
-.store {
+/* Featured Store Section */
+#featured {
   width: 1000px;
   margin: 75px 0px;
 }
 
 /* Store Items */
-.store-items {
+#store-items {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -138,18 +140,18 @@ h2, h3, h4{
   flex-wrap: wrap;
 }
 
-.store-items img {
+#store-items img {
   height: 200px;
   width: 300px;
   padding: 10px 15px;;
 }
 
-.store-items h4 {
+#store-items h4 {
   padding: 5px;
 }
 
 /* Locations */
-.locations {
+#locations {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -159,11 +161,11 @@ h2, h3, h4{
   width: 1200px;
 }
 
-.locations h2 {
+#locations h2 {
   margin-top: 50px;
 }
 
-.addresses {
+#addresses {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -179,7 +181,7 @@ h2, h3, h4{
 }
 
 /* About */
-.about {
+#about {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -188,18 +190,18 @@ h2, h3, h4{
 
 }
 
-.about h2 {
+#about h2 {
   padding-bottom: 25px;
   margin: 0px;
 }
 
-.about h5 {
+#about h5 {
   padding: 20px;
   margin: 0px;
 }
 
 /* Footer */
-.main-content footer {
+#main-content footer {
   width: 100%;
   text-align: left;
   margin-left: 20px;
