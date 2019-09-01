@@ -42,7 +42,7 @@ a {
   padding: 20px 10px;
 }
 
-/*-- Mobile Header Stylings --*/
+/*- Mobile Header Stylings -*/
 .mobile {
   display: none;
 }
@@ -57,7 +57,7 @@ a {
   display: block;
 }
 
-/* Mobile Nav Toggle */
+/*- Mobile Nav Toggle -*/
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
   cursor: pointer;
   border-radius: 1px;
@@ -75,7 +75,7 @@ a {
   bottom: -10px;
 }
 
-/* Hamburger Element Animation */
+/*-- Hamburger Element Animation --*/
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
   transition: all 500ms ease-in-out;
 }
@@ -92,7 +92,7 @@ a {
   transform: rotate(-45deg);
 }
 
-/*-- Main Div --*/
+/* Main Div */
 #main-content {
   display: flex;
   flex-direction: column;
@@ -101,7 +101,7 @@ a {
   top: 70px;
 }
 
-/* Header text formatting */
+/*- Header text formatting -*/
 .headers {
   display: flex;
   flex-direction: column;
@@ -115,7 +115,7 @@ h2, h3, h4{
   padding: 10px;
 }
 
-/* Our Mission */
+/*- Mission Section -*/
 #mission {
   display: flex;
   justify-content: center;
@@ -125,13 +125,13 @@ h2, h3, h4{
   height: 700px;
 }
 
-/* Featured Store Section */
+/*- Featured Store Section -*/
 #featured {
   width: 1000px;
   margin: 75px 0px;
 }
 
-/* Store Items */
+/*-- Store Items --*/
 #store-items {
   display: flex;
   flex-direction: row;
@@ -150,7 +150,7 @@ h2, h3, h4{
   padding: 5px;
 }
 
-/* Locations */
+/*- Locations Section -*/
 #locations {
   display: flex;
   flex-direction: column;
@@ -180,7 +180,7 @@ h2, h3, h4{
   margin: 5px auto;
 }
 
-/* About */
+/*- About Section -*/
 #about {
   display: flex;
   flex-direction: column;
@@ -206,6 +206,8 @@ h2, h3, h4{
   text-align: left;
   margin-left: 20px;
 }
+
+/* Responsiveness */
 
 /* Mobile Styles */
 @media screen and (max-width: 1024px) {
