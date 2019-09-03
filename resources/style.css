@@ -207,9 +207,16 @@ h2, h3, h4{
   margin-left: 20px;
 }
 
+
 /* Responsiveness */
 
-/* Mobile Styles */
+@media screen and (max-width: 1210px) {
+  #mission {
+    background-clip: content-box;
+    width: 1000px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
 
   header {
