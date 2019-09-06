@@ -58,6 +58,11 @@ a {
 }
 
 /*- Mobile Nav Toggle -*/
+#nav-toggle {
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
   cursor: pointer;
   border-radius: 1px;
@@ -213,6 +218,7 @@ h2, h3, h4{
 @media screen and (max-width: 1210px) {
   #mission {
     background-clip: content-box;
+    background-position: center;
     width: 1000px;
   }
 }
