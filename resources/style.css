@@ -223,27 +223,27 @@ h2, h3, h4{
 }
 
 /*- About Section -*/
-#about {
+footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 200px;
+  height: auto;
   margin: 0 auto;
-
+  padding: 100px;
 }
 
-#about h2 {
+footer h2 {
   padding-bottom: 25px;
   margin: 0px;
 }
 
-#about h5 {
+footer h5 {
   padding: 20px;
   margin: 0px;
 }
 
 /* Footer */
-#main-content footer {
+small {
   width: 100%;
   text-align: left;
   margin-left: 20px;
@@ -253,7 +253,7 @@ h2, h3, h4{
 /* Responsiveness */
 
 @media screen and (max-width: 1210px) {
-  #mission {
+  #mission, #locations {
     background-clip: content-box;
     background-position: center;
     width: 1000px;
