@@ -24,6 +24,17 @@ $(document).ready(function(){
     });
   });
 
+  $(".desktop-list a").on("click", function(event){
+    event.preventDefault();
+    var headerHeight = $("header").height();
+    var id = $(this).attr("href");
+    var originalScrollCoordinate = $(id).offset().top;
+    var newScrollCoordinate = originalScrollCoordinate - headerHeight;
+    $("html").animate({
+      scrollTop : newScrollCoordinate
+    });
+  });
+
   // Slick Carousel
   var $galleryImg = $(".gallery img");
   var $closeBtn = $(".btn");
